@@ -1,0 +1,55 @@
+<div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+  <div class="row">
+      <div class="col-md-8 mx-auto">
+
+
+
+<div class='card'>
+    <form (ngSubmit)="editProduct()">
+<div class='card-header'>
+Update Company Details
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody>  
+          <tr>
+              <td> <label>Company Id</label></td>
+              <td><input type="text" name="p_id"  [(ngModel)]="productItem.productId"/></td>                  
+            </tr>   
+            <tr>
+                <td><label>Company Name</label></td>
+                <td><input type="text" name="p_name" [(ngModel)]="productItem.productName"/></td>                  
+              </tr>  
+             
+              <tr>
+                <td><label>Eligible Batch</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="productItem.releaseDate"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Criteria</label></td>
+                <td><input type="text" name="p_desc" [(ngModel)]="productItem.description"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Eligibility</label></td>
+                <td><input type="text" name="p_price" [(ngModel)]="productItem.price"/></td>                  
+              </tr>  
+             
+              <tr>
+                <td><label>Company imageUrl</label></td>
+                <td><input type="text" name="p_image" [(ngModel)]="productItem.imageUrl"/></td>                  
+              </tr>  
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" class="btn btn-info"/></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>

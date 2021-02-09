@@ -1,0 +1,32 @@
+<!-- The content below is only a placeholder and can be replaced.-->
+
+
+<nav class="navbar navbar-expand-lg ">
+ 
+  <h5>NextStep_Portal</h5>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+      <ul class="navbar-nav ">
+       
+        <a class="nav-link"  [routerLink]="['home']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Home</a>
+        <a class="nav-link"  [routerLink]="['login']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Admin</a>
+        <a class="nav-link"  [routerLink]="['expertlogin']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Expert</a>
+        <a class="nav-link"  [routerLink]="['studentlogin']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Login</a>
+        <a class="nav-link"  [routerLink]="['signup']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">SignUp</a>
+        <a class="nav-link"  [routerLink]="['student']" *ngIf="_auth.loggedIn() && userType =='Expert'" routerLinkActive="active">Student JobOpenings</a>
+        <a class="nav-link"  [routerLink]="['addintern']" *ngIf="_auth.loggedIn() && userType =='Expert'" routerLinkActive="active">Student Internships</a>
+        <a class="nav-link"  [routerLink]="['feedback']" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Feedback</a>
+        <a class="nav-link"  [routerLink]="['add']" style="cursor:pointer" *ngIf="_auth.loggedIn() && userType =='Admin'">Add JobOpenings</a>
+        <a class="nav-link"  [routerLink]="['products']">JobOpenings</a>
+        <a class="nav-link"  [routerLink]="['authors']">Internships</a>
+        <a class="nav-link"  [routerLink]="['addauthor']"  style="cursor:pointer" *ngIf="_auth.loggedIn() && userType =='Admin'">Add Internships</a>
+        <a class="nav-link" *ngIf="_auth.loggedIn() && userType =='user'" [routerLink]="['addfeedback']">Add Feedback</a>
+        <a class="nav-link"  *ngIf="_auth.loggedIn() && userType =='user'" [routerLink]="['addstudent']">Apply Job</a>
+        <a class="nav-link"  *ngIf="_auth.loggedIn() && userType =='user'" [routerLink]="['intern']">Apply Internships</a>
+        <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
+       
+      </ul>
+    </div>
+  </nav>   
+
+<router-outlet></router-outlet>

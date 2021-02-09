@@ -1,0 +1,53 @@
+<div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+     
+        <div class="row">
+  
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+  
+                <div class="card rounded-0" id="main">
+                    
+                    
+                    <div class="card-body">
+<form action="" #userlogin='ngForm' (ngSubmit)="emailSend()">
+    <div class="text-center" style="font-weight: 600;font-size: 30px;">
+        Confirmation Email for Student
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Student email Id</label>
+        <input type="text" class="form-control" name="email" id="username" placeholder="Email of the customer" [(ngModel)]="Admin.email"  required >
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Subject </label>
+        <input type="text" class="form-control" name="subject" id="username" placeholder="Subject of the email" [(ngModel)]="Admin.subject" required >
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Content of the Email</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="matter" id="username" placeholder="Content of the email" [(ngModel)]="Admin.matter" required ></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Email Id</label>
+        <input type="email" class="form-control" name="mail" id="username" placeholder="Email from which confirmation mail has to sent" [(ngModel)]="Admin.mail" required >
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="">Password</label>
+        <input type="text" class="form-control" name="pass" id="username" placeholder="Password of the email id" [(ngModel)]="Admin.pass" required >
+    </div>
+    <br>
+    <div class="text-center">
+        <button type="submit" class="btn btn-danger" [disabled]='userlogin.form.invalid'>Send Email</button><br>
+    </div>
+    <br>
+  
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>

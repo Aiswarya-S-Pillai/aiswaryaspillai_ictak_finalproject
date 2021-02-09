@@ -1,0 +1,24 @@
+
+
+.card{
+    background:rgb(250, 229, 44);
+    /* background-image: url('../../assets/images/wood.jpg'); */
+    color:rgb(49,30,37);
+    margin-top:100px;
+    background-size: cover;
+    border:1px solid white;
+    width:400px;
+    background-attachment: fixed;
+}
+
+
+
+#maintable{
+    height:85vh;
+    background:#776c67;
+}
+.image{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}

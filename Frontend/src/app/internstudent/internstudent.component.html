@@ -1,0 +1,58 @@
+<div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+  <div class='card'>
+      <form (ngSubmit)="AddIntern()">
+  <div class='card-header'>
+   APPLY Internships
+  </div>
+  <div class='card-body'>            
+    <div class='table-responsive'>
+      <table class='table'>       
+      
+        <tbody>  
+            <tr>
+                <td> <label>InternshipName</label></td>
+                <td><input type="text"  name="p_id" [(ngModel)]="internItem.internId"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>InternshipId</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="internItem.genre"/></td>                  
+              </tr>  
+              <tr>
+                  <td><label>Student Name</label></td>
+                  <td><input type="text" name="p_name" [(ngModel)]="internItem.internName"/></td>                  
+                </tr>  
+                <tr>
+                  <td><label>University RegisterNumber</label></td>
+                  <td><input type="text" name="p_code" [(ngModel)]="internItem.book"/></td>                  
+                </tr>  
+                 
+                
+                <tr>
+                  <td><label>State</label></td>
+                  <td><input type="text" name="p_date" [(ngModel)]="internItem.country"/></td>                  
+                </tr>  
+                <tr>
+                  <td><label>EmailId</label></td>
+                  <td><input type="text" name="p_date" [(ngModel)]="internItem.price"/></td>                  
+                </tr> 
+                <tr>
+                  <td><label>CollegeName</label></td>
+                  <td><input type="text" name="p_date" [(ngModel)]="internItem.starRating"/></td>                  
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="submit" value="Submit" class="btn btn-info"/></td>                  
+                </tr>             
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </form>
+  </div>
+  
+  
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,55 @@
+<div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+  <div class="row">
+      <div class="col-md-8 mx-auto">
+<div class='card'>
+    <form (ngSubmit)="AddFeedback()">
+<div class='card-header'>
+ ADD STUDENT FEEDBACK
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody>  
+        <tr>
+            <td><label>Student Name</label></td>
+            <td><input type="text" name="p_name" [(ngModel)]="feedbackItem.feedbackName"/></td>                  
+          </tr>  
+            <tr>
+              <td><label>College Name</label></td>
+              <td><input type="text" name="p_date" [(ngModel)]="feedbackItem.genre"/></td>                  
+            </tr>  
+           
+              <tr>
+                <td><label>InternshipName</label></td>
+                <td><input type="text" name="p_code" [(ngModel)]="feedbackItem.book"/></td>                  
+              </tr>  
+               
+              
+              <tr>
+                <td><label>EmailId</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="feedbackItem.country"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>Experience</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="feedbackItem.price"/></td>                  
+              </tr> 
+              <tr>
+                <td><label>starRating</label></td>
+                <td><input type="text" placeholder="0-5" name="p_date" [(ngModel)]="feedbackItem.starRating"/></td>                  
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" class="btn btn-info"/></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+

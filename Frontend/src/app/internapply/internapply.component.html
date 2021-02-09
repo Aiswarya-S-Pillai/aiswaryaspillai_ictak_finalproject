@@ -1,0 +1,93 @@
+<div class='card'>
+    <div class='card-header'>
+      Student Internship
+    </div>
+    
+    <div class='card-body'>            
+      <div class='table-responsive'>
+        <table class='table'
+              *ngIf = 'interns && interns.length'>
+          <thead>
+            <tr>
+              <th>InternshipName</th>
+              <th>internshipId</th>
+              <th>Name</th>
+              <th>RegisterNumber</th>
+              
+              <th>State</th>
+              <th>EmailId</th>
+              <th>College Name</th>
+            </tr>
+           
+          </thead>
+          <tbody>  
+              <tr *ngFor='let intern of interns'>
+                <td>{{ intern.internId }}</td>
+                <td>{{ intern.genre }}</td>
+                  <td>{{ intern.internName }}</td>
+                  <td>{{ intern.book }}</td>
+                  
+                  <td>{{ intern.country }}</td>
+                  <td>{{ intern.price}}</td>
+                  <td>{{ intern.starRating }}</td>
+                 
+                  <td>
+                     <button class="btn btn-success" style="cursor:pointer" (click)="okIntern()">Eligible</button>
+                    <button class="btn btn-danger" style="cursor:pointer" (click)="deleteIntern(intern)">InEligible</button>
+                  </td>
+                </tr>              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="container" id="footer">
+      <div class="row">
+        <div class="col col-sm-12">
+          
+          <h1>Follow Us</h1>
+          <div class="btn-group">
+           <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+           <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+           <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <hr>
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="list-inline">
+              <li><i class="icon-facebook icon-2x"></i></li>
+              <li><i class="icon-twitter icon-2x"></i></li>
+              <li><i class="icon-google-plus icon-2x"></i></li>
+              <li><i class="icon-pinterest icon-2x"></i></li>
+            </ul>
+            
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+  
+  
+  
+  
+  
+  

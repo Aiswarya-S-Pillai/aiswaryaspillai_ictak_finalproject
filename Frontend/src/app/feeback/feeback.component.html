@@ -1,0 +1,92 @@
+<div class='card'>
+    <div class='card-header'>
+      Student Feedback
+    </div>
+    
+    <div class='card-body'>            
+      <div class='table-responsive'>
+        <table class='table'
+              *ngIf = 'feedbacks && feedbacks.length'>
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>College Name</th>
+            
+              
+              <th>InternshipName</th>
+             
+              
+              <th>EmailId</th>
+           
+              <th>Experience</th>
+              <th>starRating</th>
+            </tr>
+           
+          </thead>
+          <tbody>  
+              <tr *ngFor='let feedback of feedbacks'>
+              
+               
+                  <td>{{ feedback.feedbackName }}</td>
+                  <td>{{ feedback.genre }}</td>
+                  <td>{{ feedback .book }}</td>
+                  
+                  <td>{{feedback.country }}</td>
+                  <td>{{feedback.price}}</td>
+                  <td>{{feedback.starRating }}</td>
+                 
+                 
+                </tr>              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="container" id="footer">
+      <div class="row">
+        <div class="col col-sm-12">
+          
+          <h1>Follow Us</h1>
+          <div class="btn-group">
+           <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+           <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+           <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <hr>
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="list-inline">
+              <li><i class="icon-facebook icon-2x"></i></li>
+              <li><i class="icon-twitter icon-2x"></i></li>
+              <li><i class="icon-google-plus icon-2x"></i></li>
+              <li><i class="icon-pinterest icon-2x"></i></li>
+            </ul>
+            
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    
+  
+  
+  
+

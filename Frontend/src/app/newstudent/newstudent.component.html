@@ -1,0 +1,58 @@
+<div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+  <div class="row">
+      <div class="col-md-8 mx-auto">
+<div class='card'>
+    <form (ngSubmit)="AddStudent()">
+<div class='card-header'>
+ APPLY JobOpenings
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody>  
+          <tr>
+              <td> <label>CompanyName</label></td>
+              <td><input type="text"  name="p_id" [(ngModel)]="studentItem.studentId"/></td>                  
+            </tr>  
+            <tr>
+              <td><label>CompanyId</label></td>
+              <td><input type="text" name="p_date" [(ngModel)]="studentItem.genre"/></td>                  
+            </tr>  
+            <tr>
+                <td><label>Student Name</label></td>
+                <td><input type="text" name="p_name" [(ngModel)]="studentItem.studentName"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>University RegisterNumber</label></td>
+                <td><input type="text" name="p_code" [(ngModel)]="studentItem.book"/></td>                  
+              </tr>  
+               
+              
+              <tr>
+                <td><label>State</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="studentItem.country"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>EmailId</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="studentItem.price"/></td>                  
+              </tr> 
+              <tr>
+                <td><label>CollegeName</label></td>
+                <td><input type="text" name="p_date" [(ngModel)]="studentItem.starRating"/></td>                  
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" class="btn btn-info"/></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>

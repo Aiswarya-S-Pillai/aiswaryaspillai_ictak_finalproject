@@ -1,0 +1,82 @@
+
+
+  <div class="image" style="background-image: url('../../assets/images/f.jpg')"> 
+ 
+
+  <h4 style="color:white; margin-left:10px;">JobOpenings</h4> 
+  
+    
+    <div class='card-body' style="margin-left:40px">       
+      <div class='table-responsive'> 
+   
+             
+          
+ <div class="card-deck">
+  <div *ngFor='let product of products'>
+   
+      <div class="card mb-6" style="max-width: 1250px;">
+      <div class="column no-gutters">
+        <div class="col-12 col-lg-3 col-md-4 col-sm-6 mb-3 p-2"> 
+          <img [src]="product.imageUrl" style="width:500px;height:200px" class="card-img" alt="" > 
+        </div>
+        <div class="col-md-12">
+          <div class="card-body">
+            <h4 class="card-title">{{product.productName}}</h4><br>
+            <p class="card-text"> <b>CompanyId : </b>{{product.productId}}<p></p>
+            <p class="card-text"> <b>Eligible Batch : </b>{{product.releaseDate}}<p>
+            
+              <p class="card-text"><b>Criteria : </b>{{product.description}}</p>
+                 
+              <td>
+              <button class="btn btn-warning" style="cursor:pointer" (click)="moreProduct(product)" style="margin-left: 20px;"> Eligibility </button>
+              <button class="btn btn-warning" style="cursor:pointer"*ngIf="_auth.loggedIn() && userType =='Admin' "(click)="editProduct(product)" style="margin-left: 20px;"> Edit</button>
+              <button class="btn btn-danger" style="cursor:pointer" *ngIf="_auth.loggedIn() && userType =='Admin' "(click)="deleteProduct(product)"> Delete</button>
+            </td>     </div>
+      
+            </div>
+          </div>
+        </div><br><br>
+      </div>
+   </div>
+</div>
+</div>
+  
+</div>
+  <div class="container" id="footer">
+    <div class="row">
+      <div class="col col-sm-12">
+        
+        <h1>Follow Us</h1>
+        <div class="btn-group">
+         <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+         <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+         <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <hr>
+  
+  <hr>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-inline">
+            <li><i class="icon-facebook icon-2x"></i></li>
+            <li><i class="icon-twitter icon-2x"></i></li>
+            <li><i class="icon-google-plus icon-2x"></i></li>
+            <li><i class="icon-pinterest icon-2x"></i></li>
+          </ul>
+          
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  
+      
+
